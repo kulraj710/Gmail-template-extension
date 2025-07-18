@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Template Inserter",
+  "version": "1.0.0",
+  "author": "Kulraj Chavda",
+  "description": "Insert centrally stored email templates into Gmail compose window.",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["https://mail.google.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/logo.png",
+      "48": "assets/logo.png",
+      "128": "assets/logo.png"
+    },
+    "default_title": "Email Templates"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+8",
+        "mac": "Command+Shift+8"
+      },
+      "description": "Open Template Inserter"
+    }
+  },
+  "icons": {
+    "16": "assets/logo.png",
+    "48": "assets/logo.png",
+    "128": "assets/logo.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
+  

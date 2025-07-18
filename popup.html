@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAR.AI Email Templates</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+</head>
+<body>
+  <header>
+    <h2 id="headline">
+      <i class="ri-mail-line"></i>
+      <span>FAR.AI Email Templates</span>
+    </h2>
+  </header>
+
+  <main>
+    <!-- Search input -->
+    <div class="search-container">
+      <!-- <i class="ri-search-line"></i> -->
+      <input type="search" id="search" placeholder="Search templates..." autocomplete="off" spellcheck="false" />
+    </div>
+
+    <div id="chips" class="chips-bar"></div>
+
+
+    <!-- Loading state -->
+    <div id="loadingState" class="loading">
+      <div class="loading-spinner"></div>
+      <span>Loading templates...</span>
+    </div>
+
+    <!-- List of templates -->
+    <div id="templateList" tabindex="0" class="hidden"></div>
+
+    <!-- Empty state -->
+    <div id="emptyState" class="empty-state hidden">
+      <i class="ri-file-list-3-line"></i>
+      <p>No templates found</p>
+      <p class="small">Try adjusting your search</p>
+    </div>
+
+    <!-- Placeholder form -->
+    <form id="placeholderForm" class="hidden">
+      <p class="form-description">Fill in the placeholders below:</p>
+      <div id="inputs"></div>
+      <div class="form-actions">
+        <button type="button" id="backBtn" class="btn btn-secondary">
+          <i class="ri-arrow-left-line"></i>
+          <span>Back</span>
+        </button>
+        <button type="submit" class="btn btn-primary">
+          <span>Insert Template</span>
+          <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p class="version">v1.0.0</p>
+  </footer>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
+
+
